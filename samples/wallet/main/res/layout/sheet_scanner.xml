@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/StandardLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/almostBlack">
+
+    <TextView
+        style="@style/XMarginFillingView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/instruction"
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:maxLines="3"/>
+
+    <FrameLayout
+        android:layout_height="335dp"
+        android:layout_width="fill_parent">
+
+        <com.journeyapps.barcodescanner.BarcodeView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/reader"/>
+
+        <ImageView
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/ic_scan"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:padding="10dp"
+            android:id="@+id/flashlight"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:src="@drawable/flashlight_off"
+            android:background="?android:selectableItemBackground"/>
+
+    </FrameLayout>
+</LinearLayout>

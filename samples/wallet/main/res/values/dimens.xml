@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_radius">3dp</dimen>
+    <dimen name="large_button_margin">45dp</dimen>
+    <dimen name="header_size">22sp</dimen>
+    <dimen name="qr_size">120sp</dimen>
+
+    <!-- nachos -->
+
+    <dimen name="chip_default_padding_edge">12dp</dimen>
+    <dimen name="chip_default_padding_between_image">8dp</dimen>
+    <dimen name="chip_default_left_margin">0dp</dimen>
+    <dimen name="chip_default_right_margin">0dp</dimen>
+
+    <!-- tooltip -->
+
+    <dimen name="simpletooltip_padding">8dp</dimen>
+    <dimen name="simpletooltip_arrow_width">30dp</dimen>
+    <dimen name="simpletooltip_arrow_height">15dp</dimen>
+    <dimen name="simpletooltip_overlay_offset">16dp</dimen>
+    <dimen name="simpletooltip_animation_padding">4dp</dimen>
+
+    <!-- inverted progress bar -->
+
+    <dimen name="text_size_12">12sp</dimen>
+</resources>

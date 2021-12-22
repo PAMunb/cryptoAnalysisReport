@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/extraInputLayout"
+    android:paddingStart="11dp"
+    android:paddingEnd="14dp"
+    android:paddingTop="25dp"
+    style="@style/FillingView">
+
+    <EditText
+        style="@style/FillingView"
+        android:inputType="textMultiLine"
+        android:id="@+id/extraInput"
+        android:maxLines="8"/>
+
+</com.google.android.material.textfield.TextInputLayout>

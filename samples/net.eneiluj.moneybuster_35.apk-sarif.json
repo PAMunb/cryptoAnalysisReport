@@ -1,0 +1,361 @@
+{
+  "sarifVersion" : "2.0.0",
+  "runs" : [ {
+    "files" : {
+      "dummyMainClass.java" : {
+        "mimeType" : "text/java"
+      },
+      "net/eneiluj/moneybuster/android/ui/TextDrawable.java" : {
+        "mimeType" : "text/java"
+      },
+      "okio/ByteString.java" : {
+        "mimeType" : "text/java"
+      },
+      "net/eneiluj/moneybuster/util/SupportUtil.java" : {
+        "mimeType" : "text/java"
+      },
+      "at/bitfire/cert4android/CustomCertService.java" : {
+        "mimeType" : "text/java"
+      },
+      "org/conscrypt/OpenSSLX509Certificate.java" : {
+        "mimeType" : "text/java"
+      },
+      "at/bitfire/cert4android/CertUtils.java" : {
+        "mimeType" : "text/java"
+      }
+    },
+    "resources" : {
+      "rules" : {
+        "ForbiddenMethodError" : {
+          "id" : "ForbiddenMethodError",
+          "fullDescription" : {
+            "text" : "A method that is forbidden (CrySL block FORBIDDEN) to be called under some circumstances was found."
+          }
+        },
+        "ConstraintError-1" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-2" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-3" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-4" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-5" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "RequiredPredicateError" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "RequiredPredicateError-5" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "RequiredPredicateError-4" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "RequiredPredicateError-3" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "IncompleteOperationError" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "ConstraintError" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "RequiredPredicateError-2" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "RequiredPredicateError-1" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        }
+      }
+    },
+    "results" : [ {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "at/bitfire/cert4android/CustomCertService.java"
+          },
+          "region" : {
+            "startLine" : 66
+          }
+        },
+        "fullyQualifiedLogicalName" : "at::bitfire::cert4android::CustomCertService::<clinit>"
+      } ],
+      "ruleId" : "ForbiddenMethodError",
+      "message" : {
+        "text" : "Detected call to forbidden method javax.net.ssl.SSLContext getDefault() of class javax.net.ssl.SSLContext. Instead, call method <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>..",
+        "richText" : "ForbiddenMethodError violating CrySL rule for javax.net.ssl.SSLContext."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "dummyMainClass.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "dummyMainClass::dummyMainMethod_at_bitfire_cert4android_CustomCertService"
+      } ],
+      "ruleId" : "IncompleteOperationError",
+      "message" : {
+        "text" : "Operation on object of type java.security.KeyStore object not completed. Expected call to load.",
+        "richText" : "IncompleteOperationError violating CrySL rule for java.security.KeyStore."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "at/bitfire/cert4android/CertUtils.java"
+          },
+          "region" : {
+            "startLine" : 29
+          }
+        },
+        "fullyQualifiedLogicalName" : "at::bitfire::cert4android::CertUtils::getTrustManager"
+      } ],
+      "ruleId" : "ConstraintError",
+      "message" : {
+        "text" : "First parameter (with value \"X509\") should be any of {PKIX, SunX509}.",
+        "richText" : "ConstraintError violating CrySL rule for javax.net.ssl.TrustManagerFactory."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "at/bitfire/cert4android/CertUtils.java"
+          },
+          "region" : {
+            "startLine" : 23
+          }
+        },
+        "fullyQualifiedLogicalName" : "at::bitfire::cert4android::CertUtils::fingerprint"
+      } ],
+      "ruleId" : "ConstraintError-1",
+      "message" : {
+        "text" : "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/eneiluj/moneybuster/android/ui/TextDrawable.java"
+          },
+          "region" : {
+            "startLine" : 347
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::eneiluj::moneybuster::android::ui::TextDrawable::md5"
+      } ],
+      "ruleId" : "ConstraintError-2",
+      "message" : {
+        "text" : "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "okio/ByteString.java"
+          },
+          "region" : {
+            "startLine" : 156
+          }
+        },
+        "fullyQualifiedLogicalName" : "okio::ByteString::digest"
+      } ],
+      "ruleId" : "ConstraintError-3",
+      "message" : {
+        "text" : "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "okio/ByteString.java"
+          },
+          "region" : {
+            "startLine" : 156
+          }
+        },
+        "fullyQualifiedLogicalName" : "okio::ByteString::digest"
+      } ],
+      "ruleId" : "ConstraintError-4",
+      "message" : {
+        "text" : "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/eneiluj/moneybuster/util/SupportUtil.java"
+          },
+          "region" : {
+            "startLine" : 116
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::eneiluj::moneybuster::util::SupportUtil::getHttpURLConnection"
+      } ],
+      "ruleId" : "RequiredPredicateError",
+      "message" : {
+        "text" : "First parameter was not properly generated as generated Key Managers.",
+        "richText" : "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/eneiluj/moneybuster/util/SupportUtil.java"
+          },
+          "region" : {
+            "startLine" : 116
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::eneiluj::moneybuster::util::SupportUtil::getHttpURLConnection"
+      } ],
+      "ruleId" : "RequiredPredicateError-1",
+      "message" : {
+        "text" : "Second parameter was not properly generated as generated Trust Managers.",
+        "richText" : "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/eneiluj/moneybuster/util/SupportUtil.java"
+          },
+          "region" : {
+            "startLine" : 115
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::eneiluj::moneybuster::util::SupportUtil::getHttpURLConnection"
+      } ],
+      "ruleId" : "ConstraintError-5",
+      "message" : {
+        "text" : "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+        "richText" : "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/eneiluj/moneybuster/util/SupportUtil.java"
+          },
+          "region" : {
+            "startLine" : 116
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::eneiluj::moneybuster::util::SupportUtil::getHttpURLConnection"
+      } ],
+      "ruleId" : "RequiredPredicateError-2",
+      "message" : {
+        "text" : "Third parameter was not properly generated as randomized.",
+        "richText" : "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/conscrypt/OpenSSLX509Certificate.java"
+          },
+          "region" : {
+            "startLine" : 401
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::conscrypt::OpenSSLX509Certificate::verifyInternal"
+      } ],
+      "ruleId" : "RequiredPredicateError-3",
+      "message" : {
+        "text" : "First parameter was not properly generated as generated Pubkey.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.Signature."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/conscrypt/OpenSSLX509Certificate.java"
+          },
+          "region" : {
+            "startLine" : 480
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::conscrypt::OpenSSLX509Certificate::getPublicKey"
+      } ],
+      "ruleId" : "RequiredPredicateError-4",
+      "message" : {
+        "text" : "First parameter was not properly generated as specced Key.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/conscrypt/OpenSSLX509Certificate.java"
+          },
+          "region" : {
+            "startLine" : 480
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::conscrypt::OpenSSLX509Certificate::getPublicKey"
+      } ],
+      "ruleId" : "RequiredPredicateError-5",
+      "message" : {
+        "text" : "First parameter was not properly generated as prepared Key Material.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec."
+      }
+    } ],
+    "tool" : {
+      "name" : "CryptoAnalysis",
+      "semanticVersion" : null,
+      "language" : "en-US",
+      "version" : null
+    }
+  } ]
+}

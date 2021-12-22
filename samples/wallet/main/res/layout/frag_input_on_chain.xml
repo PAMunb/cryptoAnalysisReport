@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StandardLinearLayout"
+    android:scrollbars="none">
+
+    <LinearLayout style="@style/StandardLinearLayout">
+        <LinearLayout style="@style/StandardLinearLayout" android:id="@+id/editChain">
+            <include layout="@layout/frag_input_fiat_converter" android:id="@+id/inputChain"/>
+            <include layout="@layout/frag_fees"/>
+            <View style="@style/GrayDivider"/>
+        </LinearLayout>
+
+        <LinearLayout android:visibility="gone" style="@style/StandardLinearLayout" android:id="@+id/slideshowChain">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/qrSlideshow"/>
+            <include layout="@layout/frag_chain_buttons"/>
+        </LinearLayout>
+
+        <LinearLayout android:visibility="gone" style="@style/StandardLinearLayout" android:id="@+id/readerChain">
+            <com.journeyapps.barcodescanner.BarcodeView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/qrReader"/>
+            <include layout="@layout/frag_chain_buttons"/>
+        </LinearLayout>
+
+        <LinearLayout android:visibility="gone" style="@style/StandardLinearLayout" android:id="@+id/confirmChain">
+            <include layout="@layout/frag_two_sided_item" android:id="@+id/confirmFiat"/>
+            <include layout="@layout/frag_two_sided_item" android:id="@+id/confirmAmount"/>
+            <include layout="@layout/frag_two_sided_item" android:id="@+id/confirmFee"/>
+            <include layout="@layout/frag_chain_buttons"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:padding="50dp"
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyle"/>
+
+    </LinearLayout>
+</ScrollView>
